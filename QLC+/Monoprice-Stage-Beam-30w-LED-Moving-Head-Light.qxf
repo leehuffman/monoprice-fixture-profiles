@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5</Version>
+  <Author>Lee Huffman</Author>
+ </Creator>
+ <Manufacturer>Monoprice Stage Right</Manufacturer>
+ <Model>Stage Beam 30 Watt LED Moving Head Light</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan Control">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">Pan Control</Capability>
+ </Channel>
+ <Channel Name="Pan Control (Fine)">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">Pan Control (Fine)</Capability>
+ </Channel>
+ <Channel Name="Tilt Control">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt Control</Capability>
+ </Channel>
+ <Channel Name="Tilt Control (Fine)">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt Control (Fine)</Capability>
+ </Channel>
+ <Channel Name="Motor Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Motor Speed</Capability>
+ </Channel>
+ <Channel Name="Dimming">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Dimming</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="4">Shutter Closed</Capability>
+  <Capability Min="5" Max="250">Strobe Effect Slow To Fast</Capability>
+  <Capability Min="251" Max="255">Shutter Open</Capability>
+ </Channel>
+ <Channel Name="Color Wheel">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="23">White</Capability>
+  <Capability Min="24" Max="47">Orange</Capability>
+  <Capability Min="48" Max="71">Cyan</Capability>
+  <Capability Min="72" Max="95">Lavender</Capability>
+  <Capability Min="96" Max="119">Yellow</Capability>
+  <Capability Min="120" Max="143">Green</Capability>
+  <Capability Min="144" Max="167">Blue</Capability>
+  <Capability Min="168" Max="191">Red</Capability>
+  <Capability Min="192" Max="255">Cycling</Capability>
+ </Channel>
+ <Channel Name="Gobo Wheel">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="11">Gobo 1 (Open)</Capability>
+  <Capability Min="12" Max="23">Gobo 2</Capability>
+  <Capability Min="24" Max="35">Gobo 3</Capability>
+  <Capability Min="36" Max="47">Gobo 4</Capability>
+  <Capability Min="48" Max="59">Gobo 5</Capability>
+  <Capability Min="60" Max="71">Gobo 6</Capability>
+  <Capability Min="72" Max="83">Gobo 7</Capability>
+  <Capability Min="84" Max="95">Gobo 8</Capability>
+  <Capability Min="96" Max="111">Gobo 2 Shaking</Capability>
+  <Capability Min="112" Max="127">Gobo 3 Shaking</Capability>
+  <Capability Min="128" Max="143">Gobo 4 Shaking</Capability>
+  <Capability Min="144" Max="159">Gobo 5 Shaking</Capability>
+  <Capability Min="160" Max="175">Gobo 6 Shaking</Capability>
+  <Capability Min="176" Max="191">Gobo 7 Shaking</Capability>
+  <Capability Min="192" Max="255">Cycling</Capability>
+ </Channel>
+ <Channel Name="Color &amp; Gobo Change">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">No Function</Capability>
+  <Capability Min="8" Max="47">Automatic Color Change</Capability>
+  <Capability Min="48" Max="87">Automatic Gobo Change</Capability>
+  <Capability Min="88" Max="127">Automatic Color &amp; Gobo Change (Fast)</Capability>
+  <Capability Min="128" Max="167">Automatic Color &amp; Gobo Change (Slow)</Capability>
+  <Capability Min="168" Max="207">Automatic Color &amp; Gobo Change (Fast, Strobing)</Capability>
+  <Capability Min="208" Max="247">Automatic Color &amp; Gobo Change (Slow, Strobing)</Capability>
+  <Capability Min="248" Max="255">Automatic Color &amp; Gobo Change (Sound Controlled)</Capability>
+ </Channel>
+ <Channel Name="Movement">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">No Function</Capability>
+  <Capability Min="8" Max="32">Automatic Pan 540°</Capability>
+  <Capability Min="33" Max="58">Automatic Tilt 180°</Capability>
+  <Capability Min="59" Max="84">Automatic Pan 180°</Capability>
+  <Capability Min="85" Max="110">Automatic Tilt 90°</Capability>
+  <Capability Min="111" Max="136">Automatic Pan 360° Tilt 180°</Capability>
+  <Capability Min="137" Max="162">Automatic Pan 180° Tilt 90°</Capability>
+  <Capability Min="163" Max="188">Automatic Pan 540° Tilt 180° (Slow)</Capability>
+  <Capability Min="189" Max="214">Automatic Pan 180° Tilt 90° (Slow)</Capability>
+  <Capability Min="215" Max="240">Automatic Pan 180° Tilt 90° (Fast)</Capability>
+  <Capability Min="241" Max="255">Automatic Pan Tilt (Sound Controlled)</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="250">No Function</Capability>
+  <Capability Min="251" Max="255">Reset (10 seconds)</Capability>
+ </Channel>
+ <Mode Name="4 Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="2.5" Width="323" Height="250" Depth="270"/>
+   <Lens Name="Other" DegreesMin="13" DegreesMax="13"/>
+   <Focus Type="Head" PanMax="540" TiltMax="190"/>
+   <Technical PowerConsumption="42" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan Control</Channel>
+  <Channel Number="1">Tilt Control</Channel>
+  <Channel Number="2">Color &amp; Gobo Change</Channel>
+  <Channel Number="3">Movement</Channel>
+ </Mode>
+ <Mode Name="12 Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="2.5" Width="323" Height="250" Depth="270"/>
+   <Lens Name="Other" DegreesMin="13" DegreesMax="13"/>
+   <Focus Type="Head" PanMax="540" TiltMax="190"/>
+   <Technical PowerConsumption="42" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan Control</Channel>
+  <Channel Number="1">Pan Control (Fine)</Channel>
+  <Channel Number="2">Tilt Control</Channel>
+  <Channel Number="3">Tilt Control (Fine)</Channel>
+  <Channel Number="4">Motor Speed</Channel>
+  <Channel Number="5">Dimming</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Color Wheel</Channel>
+  <Channel Number="8">Gobo Wheel</Channel>
+  <Channel Number="9">Color &amp; Gobo Change</Channel>
+  <Channel Number="10">Movement</Channel>
+  <Channel Number="11">Reset</Channel>
+ </Mode>
+</FixtureDefinition>
